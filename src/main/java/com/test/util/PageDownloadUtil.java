@@ -36,7 +36,7 @@ public class PageDownloadUtil {
     }
 
     public static void main(String[] args) {
-        String url = "https://www.bilibili.com/";
+        String url = "https://v.youku.com/v_show/id_XNDQyNzg0MjgzNg==.html?spm=a2h0k.11417342.soresults.dselectbutton&s=e438e14b3fa94613a1bb";
         HttpClientDownloadService down = new HttpClientDownloadService();
         Page page = down.download(url);
         System.out.println(page.getContent());

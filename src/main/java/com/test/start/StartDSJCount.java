@@ -21,7 +21,7 @@ public class StartDSJCount {
         dsj.setDownloadService(new HttpClientDownloadService());
         dsj.setProcessService(new YOUKUProcessService());
 
-        String url = "https://www.bilibili.com/";
+        String url = "https://v.youku.com/v_show/id_XNDQyNzg0MjgzNg==.html?spm=a2h0k.11417342.soresults.dselectbutton&s=e438e14b3fa94613a1bb";
         //下载页面
         Page page = dsj.downloadPage(url);
 
