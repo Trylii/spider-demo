@@ -32,6 +32,9 @@ public class Page {
     //页面url
     private String url;
 
+    //子集数据
+    private String episodeNumber;
+
     public String getContent() {
         return content;
     }
@@ -112,6 +115,4 @@ public class Page {
         this.episodeNumber = episodeNumber;
     }
 
-    //子集数据
-    private String episodeNumber;
 }

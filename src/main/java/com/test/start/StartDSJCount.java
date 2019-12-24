@@ -3,8 +3,8 @@ package com.test.start;
 import com.test.entity.Page;
 import com.test.service.IDownloadService;
 import com.test.service.IProcessService;
+import com.test.service.impl.BilibiliProcessService;
 import com.test.service.impl.HttpClientDownloadService;
-import com.test.service.impl.YOUKUProcessService;
 
 /**
  * 电视剧爬虫执行入口类
@@ -19,7 +19,7 @@ public class StartDSJCount {
     public static void main(String[] args) {
         StartDSJCount dsj = new StartDSJCount();
         dsj.setDownloadService(new HttpClientDownloadService());
-        dsj.setProcessService(new YOUKUProcessService());
+        dsj.setProcessService(new BilibiliProcessService());
 
         String url = "https://www.bilibili.com/";
         //下载页面
