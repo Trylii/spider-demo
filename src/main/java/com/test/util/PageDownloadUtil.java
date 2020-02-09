@@ -36,7 +36,7 @@ public class PageDownloadUtil {
     }
 
     public static void main(String[] args) {
-        String url = "https://v.youku.com/v_show/id_XNDQyNzg0MjgzNg==.html?spm=a2h0k.11417342.soresults.dselectbutton&s=e438e14b3fa94613a1bb";
+        String url = "https://v.youku.com/v_show/id_XNDUxOTQ2NDgwMA==.html?spm=a2hcb.12523948.m_5295_c_12649.d_1&s=2bd6c44166b74ebfb2b5&scm=20140719.rcmd.5295.show_2bd6c44166b74ebfb2b5";
         HttpClientDownloadService down = new HttpClientDownloadService();
         Page page = down.download(url);
         System.out.println(page.getContent());
